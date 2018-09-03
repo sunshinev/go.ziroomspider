@@ -1,7 +1,7 @@
 package ziroomspider
 
 import (
-	"vivi/ziroomspider/ocr"
+	"github.com/sunshinev/go.ziroomspider/ocr"
 	"fmt"
 	"net/http"
 	"github.com/PuerkitoBio/goquery"
