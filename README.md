@@ -1,4 +1,35 @@
 
+
+## 使用
+
+```
+package main
+
+import (
+	"github.com/sunshinev/go.ziroomspider"
+	"strconv"
+)
+
+func main() {
+
+	page := 1
+
+	// 独卫
+	url := "http://www.ziroom.com/z/nl/z2-g2-x1.html?qwd=天涯"
+
+	for {
+		res := ziroomspider.ScanList(url + "&p=" + strconv.Itoa(page))
+		if res == false {
+			break;
+		}
+		page ++
+	}
+}
+
+```
+
+## 故事开始
+
 公元2015  第28个秋天
 
 九月的午后，微风吹动窗纱，从24楼看去远处的白云一朵朵的棉花糖浮在空中，两个街角外教堂上的钟敲响了第十三下。
